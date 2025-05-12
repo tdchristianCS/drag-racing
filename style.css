@@ -106,7 +106,7 @@ body {
 .right_display {
   position:relative;
   top: 0;
-  left: 1000spx;
+  left: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -127,10 +127,16 @@ body {
 
   position:relative;
   top: -789px;
-  left: 0;
+  left: -50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   
+}
+
+#racestrip{
+  position: relative;
+  top: -1000px;
+  left: 150px;
 }
 
