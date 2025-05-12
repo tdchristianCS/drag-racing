@@ -34,9 +34,6 @@ body {
   image-align: center;
 }
 
-#main-panel {
-  /*   position: relative; */
-}
 
 #title {
   text-align: center;
@@ -91,7 +88,6 @@ body {
   background: none;
   cursor: pointer;
   font-size: 30px;
-  font:
 }
 
 .hide {
@@ -107,8 +103,34 @@ body {
   padding: 40px;
 }
 
-  /*   top: 100px; */
-  /*   left: 50%; */
-  /*   -ms-transform: translate(-50%, -50%); */
-  /*   transform: translate(-50%, -50%); */
+.right_display {
+  position:relative;
+  top: 0;
+  left: 1000spx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
 }
+
+.right_display img {
+  padding: 10px;
+  width: 356px;
+  height: 200px;
+}
+
+
+.left_display {
+  padding: 10px;
+  width: 356px;
+  height: 200px;
+
+  position:relative;
+  top: -789px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
