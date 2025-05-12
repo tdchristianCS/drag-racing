@@ -110,7 +110,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
+ 
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 1, 1));
+  cursor: pointer
 }
 
 .right_display img {
@@ -140,3 +142,13 @@ body {
   left: 150px;
 }
 
+
+.right_display:hover{
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 1, 1));
+  cursor: pointer
+}
+
+.left_display:hover{
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 1, 1));
+  cursor: pointer
+}
