@@ -31,7 +31,7 @@ body {
 #drag-strip-bg {
   border-radius: 50px;
   /*   margin: px; */
-  margin: auto;
+  image-align: center;
 }
 
 
@@ -41,15 +41,6 @@ body {
   font-family: "slipstream-d", sans-serif;
   /*   margin: -120px; */
   color: white;
-  /* animation-duration: 5s; */
-  margin-left: -200vw;
-  position: relative;
-
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
-  transition-timing-function: ease-in-out;
 }
 
 #drag-strip {
@@ -91,7 +82,7 @@ body {
   }
 
 #btnBackToStart{
-  border-radius: 50px;s
+  border-radius: 50px;
   width: 100px;
   height: 50px;
   background: none;
@@ -113,8 +104,6 @@ body {
   top: 0;
   left: 0;
   padding: 40px;
-  width: 100vw;
-  height: 100vh;
 }
 
 .right_display {
