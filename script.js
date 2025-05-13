@@ -11,14 +11,10 @@ const backToStart = () => {
 $("#btnStart").click(startGame);
 $("#btnBackToStart").click(backToStart);
 
-const moveTitleIn = () => {
+const moveItemsIn = () => {
   $('#title').css('margin-left', 0);
-}
-
-$(document).ready(moveTitleIn);
-
-const movestartin = () => {
   $('#btnStart').css('margin-left', 0);
+  $('#btnStartWrap').css('margin-left', 0);
 }
 
-$(document).ready(movestartin)
+$(document).ready(moveItemsIn);
