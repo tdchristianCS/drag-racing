@@ -175,7 +175,7 @@ body {
 
   position:relative;
   top: -850px;
-  left: 100px;
+  left: -200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -185,7 +185,6 @@ body {
 #racestrip{
   position: absolute;
   width: 100vw;
-  height: 100vh;
 }
 
 
