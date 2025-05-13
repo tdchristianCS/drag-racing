@@ -17,4 +17,8 @@ const moveTitleIn = () => {
 
 $(document).ready(moveTitleIn);
 
+const movestartin = () => {
+  $('#btnStart').css('margin-left', 0);
+}
 
+$(document).ready(movestartin)
