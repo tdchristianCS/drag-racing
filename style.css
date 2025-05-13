@@ -82,12 +82,15 @@ body {
   }
 
 #btnBackToStart{
-  border-radius: 50px;
+  border-radius: 50px;s
   width: 100px;
   height: 50px;
   background: none;
   cursor: pointer;
   font-size: 30px;
+  position: relative;
+  top: -1000px;
+  left: 0;
 }
 
 .hide {
@@ -109,8 +112,8 @@ body {
   height: 200px;
 
   position:relative;
-  top: 0;
-  left: 1000px;
+  top: -75px;
+  left: 900px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -125,8 +128,8 @@ body {
   height: 200px;
 
   position:relative;
-  top: -789px;
-  left: -50px;
+  top: -850px;
+  left: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -135,8 +138,8 @@ body {
 
 #racestrip{
   position: relative;
-  top: -1300px;
-  left: 150px;
+  top: -1380px;
+  left: 310px;
 }
 
 
