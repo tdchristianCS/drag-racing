@@ -159,9 +159,9 @@ body {
 }
 
 #racestrip{
-  position: relative;
-  top: -1380px;
-  left: 310px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 
