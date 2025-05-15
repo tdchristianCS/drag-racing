@@ -192,7 +192,7 @@ body {
 
   position:relative;
   top: -75px;
-  left: 900px;
+  left: 1010px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -208,7 +208,7 @@ body {
 
   position:relative;
   top: -850px;
-  left: -200px;
+  left: -50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -216,8 +216,10 @@ body {
 }
 
 #racestrip{
-  position: absolute;
-  width: 100vw;
+  position: relative;
+
+  top: -1350px;
+  left: 250px;
 }
 
 
