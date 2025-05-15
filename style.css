@@ -7,7 +7,7 @@
 .flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: start;
 }
 
 .flex-col {
@@ -16,29 +16,41 @@
   justify-content: start;
 }
 
+.flex-row-end {
+  justify-content: end;
+}
+
 body {
   background: rgba(201, 201, 201);
+  margin-bottom: 10px;
 }
 
 #drag-strip {
-  width: 100%;
+  width: 920px;
+  background-image: url('https://g.tdchristian.ca/drag-racing/assets/bg.png');
   
-  /* height: 600px; */
+  height: 512px;
   /*   position: relative;
   top: 20px;
   left: 50px; */
-}
-
-#drag-strip-bg {
   border-radius: 50px;
   /*   margin: px; */
-  right:100px;
-  margin: auto;
+  margin-left: 100px;
+  position: relative;
+  margin-bottom: 80px;
+  margin-right: -200vw;
+  background-repeat: no-repeat;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  transition-timing-function: ease-in-out;
 }
+
 
 #startScreen {
 
-  text-align: center;
+  /*text-align: center;*/
   font-size: 50px;
   font-family: "slipstream-d", sans-serif;
   /*   margin: -120px; */
@@ -65,12 +77,7 @@ body {
   -o-transition: 1.5s;
   transition: 1.5s;
   transition-timing-function: ease-in-out;
-}
 
-#drag-strip {
-  
-  background-repeat: no-repeat;
-  margin: 50px 20px 5px 20px;
 }
 
 
@@ -84,6 +91,8 @@ body {
   border: none;
   cursor: pointer;
   font-size: 100px;
+  position: relative;
+  top: -520px;
 
   /*   top: 100px;
   left: 50%;
@@ -137,7 +146,8 @@ body {
   position: relative;
   border: none;
   font-size: 100px;
-  margin-top: -15px;
+  margin-top: -75px;
+  top: -500px;
   /* font-family: "slipstream-d", sans-serif; */
 }
 
@@ -163,6 +173,7 @@ body {
   display: none;
   visibility: hidden;
 }
+
 
 
 .panel {
