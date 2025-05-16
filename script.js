@@ -17,6 +17,8 @@ const moveItemsIn = () => {
   $('#btnStartWrap').css('margin-left', '-15px');
   $('btnInsight').css('margin-left', 0);
   $('#btnInsightWrap').css('margin-left', '-15px');
+  $('btnsettings').css('margin-left', 0);
+  $('#btnsettingsWrap').css('margin-left', '-15px');
   $('#drag-strip').css('margin-right', '-210px');
 }
 

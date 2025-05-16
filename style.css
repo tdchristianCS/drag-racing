@@ -108,7 +108,7 @@ body {
   cursor: pointer;
   font-size: 100px;
   position: relative;
-  top: -520px;
+  top: -490px;
 
   /*   top: 100px;
   left: 50%;
@@ -164,7 +164,7 @@ body {
   border: none;
   font-size: 100px;
   margin-top: -75px;
-  top: -500px;
+  top: -450px;
   /* font-family: "slipstream-d", sans-serif; */
 }
 
@@ -185,6 +185,37 @@ body {
 #btnInsight:hover{
   filter: drop-shadow(0 0 0.75rem rgba(255, 255, 1, 1));
 }
+
+
+#btnsettings {
+  background: none;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  font-size: 100px;
+  margin-top: -75px;
+  top: -490px;
+  /* font-family: "slipstream-d", sans-serif; */
+}
+
+
+#btnsettingsWrap{
+  margin-bottom: 10px;
+  margin-left: -200vw;
+  position: relative;
+
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+
+#btnsettings:hover{
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 1, 1));
+}
+
 
 .hide {
   display: none;
