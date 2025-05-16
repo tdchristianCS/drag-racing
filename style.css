@@ -130,12 +130,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-#btnStart {
-  
-  /* background: url('https://g.tdchristian.ca/drag-racing/assets/start.png'); */
-  /* background-size: 410px 180px;  */
 
-}
   
 
   
@@ -281,5 +276,9 @@ body {
 }
 
 #instructions{
-  
+  position: relative;
+  top: -1630px;
+  left: 300px;
+
+  font-size: 50px;
 }

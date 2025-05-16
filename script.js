@@ -39,7 +39,12 @@ $("#btnBackToStart").click(backToStart);
 
 const intiate_game = () => {
   var stage = 0;
-
+  if (stage === 0) {
+    $('car').mouseover(init_car_1);
+    const init_car_1 = (e) => {
+    
+    }
+  }
 
 }
 
