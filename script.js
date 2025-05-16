@@ -42,7 +42,7 @@ const intiate_game = () => {
   if (stage === 0) {
     $('car').mouseover(init_car_1);
     const init_car_1 = (e) => {
-    
+      car1 = e.target.id
     }
   }
 
