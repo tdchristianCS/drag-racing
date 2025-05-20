@@ -2,6 +2,13 @@
 const car1srcDefault = "https://g.tdchristian.ca/drag-racing/assets/cybertruck_top.png";
 const car1srcOnclick = "";
 
+const hideAllScreens  = () => {
+  $("#gameScreen").addClass("hide");
+  $("#ruleScreen").addClass("hide");
+  $("#startScreen").addClass("hide");
+  $("#settingsScreen").addClass("hide");
+}
+
 const startGame = () => {
   hideAllScreens();
   $("#gameScreen").removeClass("hide");
@@ -23,7 +30,7 @@ const settingsScreen = () => {
   $("#settingsScreen").removeClass("hide");
 };
 
-$("#btnSettings").click(settingsScreen);
+$("#btnsettings").click(settingsScreen);
 $("#btnStart").click(startGame);
 $("#btnInsight").click(rulescreen);
 $("#btnBackToStart_1").click(backToStart);
