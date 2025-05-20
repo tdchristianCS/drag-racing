@@ -23,7 +23,7 @@ const settingsScreen = () => {
   $("#settingsScreen").removeClass("hide");
 };
 
-$("#btnsettings").click(settingsScreen);
+$("#btnSettings").click(settingsScreen);
 $("#btnStart").click(startGame);
 $("#btnInsight").click(rulescreen);
 $("#btnBackToStart_1").click(backToStart);
@@ -44,6 +44,14 @@ const moveItemsIn = () => {
 
 $(document).ready(moveItemsIn);
 
+var btnstart = new Audio();
+btnstart.src = "https://g.tdchristian.ca/drag-racing/assets/button_sound.mp3";
+
+var btnInsight = new Audio();
+btnInsight.src = "https://g.tdchristian.ca/drag-racing/assets/button_sound.mp3";
+
+var btnsettings = new Audio();
+btnsettings.src = "https://g.tdchristian.ca/drag-racing/assets/button_sound.mp3";
 
 
 const intiate_game = (e) => {
