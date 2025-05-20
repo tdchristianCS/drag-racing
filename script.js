@@ -1,3 +1,6 @@
+const car1srcDefault = "https://g.tdchristian.ca/drag-racing/assets/cybertruck_top.png";
+const car1srcOnclick = "";
+
 const startGame = () => {
   $("#gameScreen").removeClass("hide");
   $("#startScreen").addClass("hide");
@@ -37,15 +40,19 @@ const backtoStart = () => {
 $("#btnInsight").click(startGame);
 $("#btnBackToStart").click(backToStart);
 
-const intiate_game = () => {
+const intiate_game = (e) => {
   var stage = 0;
   if (stage === 0) {
-    $('car').mouseover(init_car_1);
-    const init_car_1 = (e) => {
-      car1 = e.target.id
+    var car1id = `${e.target.id}_top`;
+    var car1el = `<img id="${car1id}" class="leftDisplay" src="${car1srcDefault}">`;
+    console.log(car1id);
+
+    $('#racearea').append(car1el);
+    console.log(car1.id);
+    console.log(classNames);
     }
   }
 
-}
 
-$('car').mouseover(intiate_game);
+
+$('.car').click(intiate_game);
