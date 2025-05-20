@@ -1,7 +1,19 @@
+// const hideAllScreens = () => {
+const car1srcDefault = `https://g.tdchristian.ca/drag-racing/assets/${e.target.id}_top.png`;
+
+
 const hideAllScreens = () => {
-  $("#startScreen").addClass("hide");
   $("#gameScreen").addClass("hide");
   $("#ruleScreen").addClass("hide");
+  $("#startScreen").addClass("hide");
+  $("#settingsScreen").addClass("hide");
+
+}
+
+const hideAllScreens  = () => {
+  $("#gameScreen").addClass("hide");
+  $("#ruleScreen").addClass("hide");
+  $("#startScreen").addClass("hide");
   $("#settingsScreen").addClass("hide");
 }
 
@@ -26,7 +38,7 @@ const settingsScreen = () => {
   $("#settingsScreen").removeClass("hide");
 };
 
-$("#btnSettings").click(settingsScreen);
+$("#btnsettings").click(settingsScreen);
 $("#btnStart").click(startGame);
 $("#btnInsight").click(rulescreen);
 $("#btnBackToStart_1").click(backToStart);
@@ -57,18 +69,19 @@ var btnsettings = new Audio();
 btnsettings.src = "https://g.tdchristian.ca/drag-racing/assets/button_sound.mp3";
 
 
-
-
-
-const initiate_game = () => {
+const intiate_game = (e) => {
   var stage = 0;
   if (stage === 0) {
-    $('car').mouseover(init_car_1);
-    const init_car_1 = (e) => {
-    
+    var car1id = `${e.target.id}_top`;
+    var car1el = `<img id="${car1id}" class="leftDisplay" src="${car1srcDefault}">`;
+    console.log(car1id);
+
+    $('#racearea').append(car1el);
+    console.log(car1.id);
+    console.log(classNames);
     }
   }
 
-}
 
-$('car').mouseover(initiate_game);
+
+$('.car').click(intiate_game);
