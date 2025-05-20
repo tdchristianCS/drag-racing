@@ -1,6 +1,14 @@
 // const hideAllScreens = () => {
-const car1srcDefault = "https://g.tdchristian.ca/drag-racing/assets/cybertruck_top.png";
-const car1srcOnclick = "";
+const car1srcDefault = `https://g.tdchristian.ca/drag-racing/assets/${e.target.id}_top.png`;
+
+
+const hideAllScreens = () => {
+  $("#gameScreen").addClass("hide");
+  $("#ruleScreen").addClass("hide");
+  $("#startScreen").addClass("hide");
+  $("#settingsScreen").addClass("hide");
+
+}
 
 const hideAllScreens  = () => {
   $("#gameScreen").addClass("hide");
