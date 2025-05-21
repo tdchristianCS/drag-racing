@@ -61,11 +61,12 @@ btnsettings.src = "https://g.tdchristian.ca/drag-racing/assets/button_sound.mp3"
 
 
 const intiate_game = (e) => {
+  console.log("help")
   var stage = 0;
   if (stage === 0) {
     var car1id = `${e.target.id}_top`;
     let src = `${car1srcDefaultBase}/${e.target.id}_top.png`;
-    var car1el = `<img id="${car1id}" class="leftDisplay" src="${src}">`;
+    var car1el = `<img id="${car1id}" class="car1position" src="${src}">`;
     console.log(car1id);
 
     $('#racearea').append(car1el);
@@ -73,7 +74,5 @@ const intiate_game = (e) => {
     console.log(classNames);
     }
   }
-
-
 
 $('.car').click(intiate_game);
