@@ -1,14 +1,5 @@
 // const hideAllScreens = () => {
-const car1srcDefault = `https://g.tdchristian.ca/drag-racing/assets/${e.target.id}_top.png`;
-
-
-const hideAllScreens = () => {
-  $("#gameScreen").addClass("hide");
-  $("#ruleScreen").addClass("hide");
-  $("#startScreen").addClass("hide");
-  $("#settingsScreen").addClass("hide");
-
-}
+const car1srcDefaultBase = `https://g.tdchristian.ca/drag-racing/assets`;
 
 const hideAllScreens  = () => {
   $("#gameScreen").addClass("hide");
@@ -73,7 +64,8 @@ const intiate_game = (e) => {
   var stage = 0;
   if (stage === 0) {
     var car1id = `${e.target.id}_top`;
-    var car1el = `<img id="${car1id}" class="leftDisplay" src="${car1srcDefault}">`;
+    let src = `${car1srcDefaultBase}/${e.target.id}_top.png`;
+    var car1el = `<img id="${car1id}" class="leftDisplay" src="${src}">`;
     console.log(car1id);
 
     $('#racearea').append(car1el);
