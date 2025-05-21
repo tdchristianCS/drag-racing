@@ -7,36 +7,7 @@ const hideAllScreens = () => {
   $("#ruleScreen").addClass("hide");
   $("#startScreen").addClass("hide");
   $("#settingsScreen").addClass("hide");
-
 }
-
-const hideAllScreens  = () => {
-  $("#gameScreen").addClass("hide");
-  $("#ruleScreen").addClass("hide");
-  $("#startScreen").addClass("hide");
-  $("#settingsScreen").addClass("hide");
-}
-
-const startGame = () => {
-  hideAllScreens();
-  $("#gameScreen").removeClass("hide");
-};
-
-const backToStart = () => {
-  hideAllScreens();
-  $("#startScreen").removeClass("hide");
-};
-
-
-const rulescreen = () => {
-  hideAllScreens();
-  $("#ruleScreen").removeClass("hide");
-};
-
-const settingsScreen = () => {
-  hideAllScreens();
-  $("#settingsScreen").removeClass("hide");
-};
 
 $("#btnsettings").click(settingsScreen);
 $("#btnStart").click(startGame);
